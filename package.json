@@ -1,0 +1,19 @@
+{
+  "name": "oh-my-food",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Smilodon83/ohmyfood.git"
+  },
+  "author": "smilodon83",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Smilodon83/ohmyfood/issues"
+  },
+  "homepage": "https://github.com/Smilodon83/ohmyfood#readme"
+}
