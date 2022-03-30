@@ -1,14 +1,14 @@
 .btn {
   text-align: center;
   font-size: 16px;
-  width: 55%;
+  width: 14em;
   border: none;
   border-radius: 40px;
   padding: 1em 0;
   color: white;
   background: linear-gradient(#ff79da, #9356DC);
   box-shadow: 0 0 16px grey;
-  margin: 1em auto;
+  margin: 1em auto 0 auto;
   position: relative;
   z-index: 1;
   cursor: pointer;
@@ -23,6 +23,9 @@ header {
   color: black;
   text-decoration: none;
   text-align: center;
+}
+header h1 {
+  margin: 0.1em auto;
 }
 header a {
   text-decoration: none;
@@ -118,56 +121,75 @@ footer ul li {
 main {
   font-family: "Roboto", sans-serif;
 }
-main img {
+main .menu-img {
   width: 100%;
+  line-height: 3em;
+  position: relative;
   z-index: -1;
-  margin-top: -40px;
-  object-fit: cover;
 }
 
 .menu {
   z-index: 1;
   margin-top: -3em;
-  padding-left: 1.5em;
   width: 100%;
   background-color: #f6f6f6;
-  border-radius: 30px 30px 0 0;
+  border-radius: 45px 45px 0 0;
+  padding-bottom: 4em;
 }
 .menu__titre {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  font-size: 28px;
+  font-size: 24px;
+  padding: 0.5em 1em;
 }
 .menu__titre h2 {
   margin: 0;
-  padding: 0;
-}
-.menu h2 {
+  padding: 0.5em 0;
   font-family: "Shrikhand", cursive;
+}
+.menu__container {
+  margin-bottom: 3em;
 }
 .menu h4 {
   color: #7b7b7b;
+  font-weight: 400;
+  margin: 0.5em auto;
+  padding-left: 1.5em;
 }
 .menu .sidebar {
   height: 0.2em;
-  width: 3em;
+  width: 2.5em;
   background-color: #99e2d0;
+  margin-left: 1.5em;
 }
 .menu .plat {
+  position: relative;
   width: 95%;
-  margin: 1em 0;
+  height: 5em;
+  margin: 1em auto 1em auto;
   background-color: white;
-  border-radius: 20px;
+  border-radius: 10px;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  box-shadow: 1px 1px 8px #c2c2c2;
+}
+.menu .plat__info {
+  width: 70%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .menu .plat h5, .menu .plat p {
-  margin: 0.2em;
+  margin: 0.4em auto;
+  text-overflow: ellipsis;
 }
 .menu .plat h5 {
   font-size: 20px;
+}
+.menu .plat__check {
+  display: none;
 }
 
 * {

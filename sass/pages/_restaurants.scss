@@ -1,60 +1,90 @@
 main {
     font-family: 'Roboto', sans-serif;
-    & img {
+    & .menu-img {
         width: 100%;
+        line-height: 3em;
+        position: relative;
         z-index: -1;
-        margin-top: -40px;
-        object-fit: cover;
+    
     }
 }
 
 .menu{
     z-index: 1;
     margin-top: -3em;
-    padding-left : 1.5em;
     width: 100%;
     background-color: #f6f6f6 ;
-    border-radius: 30px 30px 0 0 ;
+    border-radius: 45px 45px 0 0 ;
+    padding-bottom: 4em;
     &__titre{
         display: flex;
         align-items: center;
         justify-content: space-around;
-        font-size: 28px;
+        font-size: 24px;
+        padding: 0.5em 1em;
+        
         & h2 {
             margin: 0;
-            padding: 0;
+            padding: 0.5em 0;
+            font-family:'Shrikhand', cursive;
+        
         }
     }
-
-    & h2{
-        font-family:'Shrikhand', cursive;
-      
+    &__container{
+        margin-bottom: 3em;
     }
+ 
     & h4{
         color: #7b7b7b;
+        font-weight: 400;
+        margin: 0.5em auto;
+        padding-left: 1.5em;
+
     }
 
     & .sidebar{
         height: 0.2em;
-        width: 3em;
+        width: 2.5em;
         background-color: $color-tertiary;
+        margin-left: 1.5em ;
     }
-
+    
     & .plat {
+        position: relative;
         width: 95%;
-        margin: 1em 0;
+        height: 5em;
+        margin:1em auto 1em auto;
         background-color: white;
-        border-radius: 20px;
+        border-radius: 10px;
         display: flex;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: space-around;
+        box-shadow: 1px 1px 8px #c2c2c2;
+
+        &__info{
+            width: 70%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            
+        }
+
+        
+
+        
 
         & h5 , & p {
-            margin: 0.2em;
+            margin: 0.4em auto;
+            text-overflow: ellipsis;
+           
         }
         
         & h5 {
             font-size: 20px;
+        }
+
+        &__check{
+            display: none;
         }
 
     }
