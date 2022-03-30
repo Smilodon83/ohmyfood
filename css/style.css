@@ -140,7 +140,7 @@ main .menu-img {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  font-size: 24px;
+  font-size: 22px;
   padding: 0.5em 1em;
 }
 .menu__titre h2 {
@@ -171,7 +171,7 @@ main .menu-img {
   background-color: white;
   border-radius: 10px;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-around;
   box-shadow: 1px 1px 8px #c2c2c2;
 }
@@ -187,6 +187,11 @@ main .menu-img {
 }
 .menu .plat h5 {
   font-size: 20px;
+}
+.menu .plat__prix {
+  font-weight: 500;
+  color: #353535;
+  padding-bottom: 0.7em;
 }
 .menu .plat__check {
   display: none;
