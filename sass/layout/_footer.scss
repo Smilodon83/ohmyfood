@@ -33,3 +33,19 @@ footer {
         }
     }
 }
+
+// Media queries 
+@media screen and (min-width: 768px) {
+
+    footer {
+         text-align: center;
+
+         & ul {
+             display: flex;
+             flex-direction: row;
+             justify-content: space-around;
+             margin: 10em auto 0 auto;
+         }
+    }
+
+}

@@ -93,3 +93,27 @@ main {
 
     }
 }
+
+// Media queries 
+@media screen and (min-width: 768px) {
+    .menu-img {
+        height: 50vw;
+        object-position: 80% 50%;
+    }
+    .menu {
+        margin-top: -20vw;
+    }
+    .menu__titre {
+        position: relative;
+        // margin: 0 auto 0 auto;
+    }
+   .carte {
+        display: flex;
+        flex-direction: row;
+
+        & .container {
+            margin: 3em auto;
+            width: 30%;
+        }
+   }
+}

@@ -11,9 +11,7 @@
     text-decoration: none;
     color: black;
     
-    &__cards {
-        
-    }
+   
     
     }
     &__card-img{
@@ -72,4 +70,30 @@
        
         
     }
+}
+
+// Media queries
+// Tablette
+@media screen and (min-width: 768px) {
+    .restaurants {
+        & h2 {
+            text-align: center;
+        }
+
+      &__cards {
+          display: flex;
+          justify-content: space-around;
+          flex-direction: row;
+          flex-wrap: wrap;
+
+          & a {
+              width: 40%;
+
+          }
+          & img {
+              height: 20vw;
+          }
+      }
+    }
+
 }

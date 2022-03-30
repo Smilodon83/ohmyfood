@@ -64,6 +64,17 @@ footer ul li {
   margin: 0.7em 0;
 }
 
+@media screen and (min-width: 768px) {
+  footer {
+    text-align: center;
+  }
+  footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 10em auto 0 auto;
+  }
+}
 .restaurants a {
   width: 90%;
   display: flex;
@@ -118,6 +129,23 @@ footer ul li {
   color: #4c4c4c;
 }
 
+@media screen and (min-width: 768px) {
+  .restaurants h2 {
+    text-align: center;
+  }
+  .restaurants__cards {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .restaurants__cards a {
+    width: 40%;
+  }
+  .restaurants__cards img {
+    height: 20vw;
+  }
+}
 main {
   font-family: "Roboto", sans-serif;
 }
@@ -197,6 +225,29 @@ main .menu-img {
   display: none;
 }
 
+@media screen and (min-width: 768px) {
+  .menu-img {
+    height: 50vw;
+    object-position: 80% 50%;
+  }
+
+  .menu {
+    margin-top: -20vw;
+  }
+
+  .menu__titre {
+    position: relative;
+  }
+
+  .carte {
+    display: flex;
+    flex-direction: row;
+  }
+  .carte .container {
+    margin: 3em auto;
+    width: 30%;
+  }
+}
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -217,12 +268,13 @@ body {
   background-color: #eaeaea;
   width: auto;
   padding: 10px 0 10px 0;
-  gap: 5%;
+  gap: 1em;
   position: relative;
+  margin: 0 auto;
   box-shadow: 0 0.2em 0.5em grey inset;
 }
 .local__city {
-  width: 8rem;
+  width: 9rem;
   border: none;
   background-color: transparent;
   font-family: "Roboto", sans-serif;
@@ -293,6 +345,24 @@ h2 {
   background-color: #dddddd;
   padding-bottom: 4em;
   padding-top: 1em;
+}
+
+@media screen and (min-width: 768px) {
+  .local {
+    gap: 1em;
+  }
+
+  .process h2 {
+    text-align: center;
+  }
+  .process__etapebox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .process__etape {
+    width: 30%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
