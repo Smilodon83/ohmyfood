@@ -8,20 +8,47 @@
     transform: translateY(0);
   }
 }
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+    display: contents;
+  }
+  100% {
+    transform: translateX(-5em);
+    display: contents;
+  }
+}
+@keyframes check-rotation {
+  0% {
+    transform: rotate(0deg);
+    margin: 0;
+  }
+  20% {
+    transform: rotate(0deg);
+  }
+  100% {
+    margin: 0 2rem;
+    transform: rotate(360deg);
+  }
+}
 .btn {
   text-align: center;
   font-size: 16px;
   width: 14em;
   border: none;
-  border-radius: 40px;
+  border-radius: 30px;
   padding: 1em 0;
   color: white;
   background: linear-gradient(#ff79da, #9356DC);
-  box-shadow: 0 0 16px grey;
+  box-shadow: 4px 4px 4px grey;
   margin: 1em auto 0 auto;
   position: relative;
   z-index: 1;
   cursor: pointer;
+}
+.btn:hover {
+  filter: brightness(1.1);
+  box-shadow: 4px 4px 4px #4e4e4e;
 }
 
 header {
@@ -222,16 +249,21 @@ main .menu-img {
   box-shadow: 1px 1px 8px #c2c2c2;
   animation: apparition 1.5s forwards;
   opacity: 0;
+  overflow: hidden;
 }
 .menu .plat__info {
-  width: 80%;
+  width: 100%;
   font-size: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
   white-space: nowrap;
+  padding-left: 5px;
 }
 .menu .plat h5, .menu .plat p {
   margin: 0.8em auto;
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .menu .plat h5 {
   font-size: 20px;
@@ -240,9 +272,33 @@ main .menu-img {
   font-weight: 500;
   color: #353535;
   padding-bottom: 0.7em;
+  margin: 0 1.5rem 0 0.3rem;
+  transition: 0.5s ease;
 }
 .menu .plat__check {
-  display: none;
+  position: absolute;
+  right: 0px;
+  width: 3em;
+  height: 100%;
+  font-size: 28px;
+  border-radius: 0 10px 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #99e2d0;
+  color: white;
+  transform: translateX(100%);
+  transition: 0.5s ease;
+}
+.menu .plat:hover .plat__prix {
+  padding-right: 6em;
+}
+.menu .plat:hover .plat__check {
+  transform: translateX(0%);
+  transition: 0.5s ease;
+}
+.menu .plat:hover .plat__check i {
+  animation: check-rotation 1.2s both;
 }
 
 .plat:nth-child(2) {
