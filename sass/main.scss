@@ -1,4 +1,5 @@
 @import "./utils/variables";
+@import "./utils/animations";
 @import "./components/buttons";
 @import "./layout/header";
 @import "./layout/footer";
@@ -27,9 +28,10 @@ body{
     gap: 1em;
     position: relative;
     margin: 0 auto;
+    overflow: visible;
     
 
-    box-shadow: 0 0.2em 0.5em grey inset;
+    box-shadow: 0em 0.1em 0.3em grey inset;
     &__city{
         width: 9rem;
         border: none;
@@ -108,14 +110,30 @@ h2 {
         & p {
             font-weight: 500;
         }
+        &:hover {
+            background-color: #f5edffff;
+            i{
+                color: $color-primary;
+            }
+        }
 
 }
 }
 
 #restaurants{
-    background-color: #dddddd;
+    background-color: #f6f6f6;
     padding-bottom: 4em;
     padding-top: 1em ;    
+}
+.loader{
+    font-family: 'Shrikhand', cursive;
+    font-size: 150px;
+    width: 100%;
+    height: 100vh;
+    display: none;
+    align-items: center;
+    justify-content: center;
+       
 }
 
 // Media queries
