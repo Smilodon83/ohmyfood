@@ -6,8 +6,7 @@
 @import "./components/cards";
 @import "./pages/restaurants";
 * {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+        box-sizing: border-box;
 }
 body{
     width: 100%;
@@ -83,9 +82,7 @@ h2 {
         cursor: pointer;
         box-shadow:0px 5px 8px #e2e2e2 ;
 
-        & process__etape{
-            
-        }
+        
 
         & span {
             width: 1.7em;
@@ -138,7 +135,7 @@ h2 {
     animation: disparition-loadder 1.25s both;
     animation-delay: 3s;
      
-    & span {
+    & .lettre {
         // padding: 0.25em;
         // background-color: black;
         // background-clip: text;

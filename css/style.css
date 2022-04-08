@@ -31,17 +31,6 @@
     transform: rotate(360deg);
   }
 }
-@keyframes loadding {
-  0% {
-    transform: translateX(-100%);
-  }
-  85%, 100% {
-    opacity: 1;
-  }
-  100% {
-    transform: translateX(1);
-  }
-}
 @keyframes apparition-loadder {
   0% {
     opacity: 0;
@@ -377,7 +366,6 @@ main .menu-img {
   }
 }
 * {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -495,7 +483,7 @@ h2 {
   animation: disparition-loadder 1.25s both;
   animation-delay: 3s;
 }
-.loadder span {
+.loadder .lettre {
   animation: apparition-loadder 1s both;
   animation-delay: 1.4s;
 }
