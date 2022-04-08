@@ -41,19 +41,6 @@
 
 // Animation du loader 
 
-// @keyframes loadding {
-//     0% {
-//         transform: translateX(-100%);
-//     }
-    
-//     85%,100% {
-//         opacity: 1;
-//     }
-//     100% {
-//         transform: translateX(0);
-//     }
-// }
-
 @keyframes apparition-loadder {
     0% {
         opacity: 0;
@@ -77,5 +64,20 @@
         transform: translateY(-10000px);
         height: 0vw;
         visibility: hidden;
+    }
+}
+
+// Animation Coeur 
+
+@keyframes remplissage-coeur{
+    0%{
+        opacity: 0;
+        background: linear-gradient($color-secondary, $color-primary);
+        background-clip: text;
+    }
+    100%{
+        opacity: 1;
+        background: linear-gradient($color-secondary, $color-primary);
+        background-clip: text;
     }
 }

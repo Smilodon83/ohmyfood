@@ -51,6 +51,18 @@
     visibility: hidden;
   }
 }
+@keyframes remplissage-coeur {
+  0% {
+    opacity: 0;
+    background: linear-gradient(#ff79da, #9356DC);
+    background-clip: text;
+  }
+  100% {
+    opacity: 1;
+    background: linear-gradient(#ff79da, #9356DC);
+    background-clip: text;
+  }
+}
 .btn {
   text-align: center;
   font-size: 16px;
@@ -185,9 +197,21 @@ footer ul li {
   font-weight: 300;
   color: #4c4c4c;
 }
-.restaurants i {
-  font-size: 28px;
+.restaurants .coeur-vide {
+  position: absolute;
+  font-size: 30px;
   color: #4c4c4c;
+}
+.restaurants .coeur-plein {
+  position: relative;
+  z-index: 1;
+  color: transparent;
+  right: 1em;
+  background-color: #9356DC;
+  background-clip: text;
+}
+.restaurants .coeur-plein:hover {
+  animation: remplissage-coeur 2sec both;
 }
 
 @media screen and (min-width: 768px) {
@@ -476,7 +500,7 @@ h2 {
   width: 100%;
   height: 100vh;
   position: relative;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   color: black;

@@ -63,12 +63,25 @@
 
        
     }
-    & i{
-        
-     font-size: 28px;
+    & .coeur-vide{
+     position: absolute;
+     font-size: 30px;
      color: #4c4c4c;  
        
         
+    }
+    & .coeur-plein{
+        position: relative;
+        z-index: 1;
+        color: transparent;
+        right: 1em;
+        background-color: $color-primary;
+        background-clip: text;
+
+
+        &:hover {
+            animation: remplissage-coeur 2sec both;
+        }
     }
 }
 
