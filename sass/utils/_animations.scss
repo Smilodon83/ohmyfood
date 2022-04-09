@@ -72,12 +72,17 @@
 @keyframes remplissage-coeur{
     0%{
         opacity: 0;
+        color: transparent;
+        -webkit-text-stroke-width: 0px;
         background: linear-gradient($color-secondary, $color-primary);
         background-clip: text;
     }
+    
+    
     100%{
         opacity: 1;
         background: linear-gradient($color-secondary, $color-primary);
         background-clip: text;
+        -webkit-text-stroke-width: 0px;
     }
 }

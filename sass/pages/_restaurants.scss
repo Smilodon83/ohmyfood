@@ -28,9 +28,20 @@ main {
             margin: 0 ;
             padding: 0.5em 0;
             font-family:'Shrikhand', cursive;
-        
         }
+    
     }
+    &__titre-coeur{
+        padding-right: 10px;  
+        font-size: 30px;
+        color: transparent;
+        -webkit-text-stroke: 3px #4c4c4c;
+      
+     &:hover {
+         animation: remplissage-coeur 2s forwards;
+     }
+    }
+    
     &__container{
         margin-bottom: 3em;
     }

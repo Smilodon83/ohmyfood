@@ -63,26 +63,23 @@
 
        
     }
-    & .coeur-vide{
-     position: absolute;
+    & .fa-heart{
+     padding-right: 10px;  
      font-size: 30px;
-     color: #4c4c4c;  
+     color: transparent;
+     -webkit-text-stroke: 3px #4c4c4c;
+      
+     &:hover {
+         animation: remplissage-coeur 2s forwards;
+     }
        
         
     }
-    & .coeur-plein{
-        position: relative;
-        z-index: 1;
-        color: transparent;
-        right: 1em;
-        background-color: $color-primary;
-        background-clip: text;
+   
 
 
-        &:hover {
-            animation: remplissage-coeur 2sec both;
-        }
-    }
+        
+    
 }
 
 // Media queries
