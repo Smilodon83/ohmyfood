@@ -145,9 +145,9 @@ footer ul li {
   }
   footer ul {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     margin: 5em auto 0 auto;
+    gap: 3em;
     padding-bottom: 2em;
   }
 }
