@@ -83,7 +83,7 @@
 }
 .btn:hover {
   filter: brightness(1.1);
-  box-shadow: 4px 4px 4px #4e4e4e;
+  box-shadow: 4px 4px 4px rgb(78, 78, 78);
 }
 
 header {
@@ -107,6 +107,7 @@ header a {
 }
 
 footer {
+  padding-top: 80px;
   background-color: #353535;
   text-decoration: none;
   color: white;
@@ -247,7 +248,7 @@ main .menu-img {
   width: 100%;
   background-color: #f6f6f6;
   border-radius: 35px 35px 0 0;
-  padding-bottom: 4em;
+  padding-bottom: 10em;
 }
 .menu__titre {
   display: flex;
@@ -367,20 +368,18 @@ main .menu-img {
     position: relative;
     object-fit: cover;
   }
-
   .menu__titre {
     position: relative;
     justify-content: space-between;
     padding: 0 10em;
   }
-
   .carte {
     display: flex;
     flex-direction: row;
   }
   .carte .container {
     margin: 3em auto;
-    width: 40%;
+    width: 33%;
   }
 }
 @media screen and (max-width: 400px) {
@@ -487,7 +486,7 @@ h2 {
   font-weight: 500;
 }
 .process__etape:hover {
-  background-color: #f5edffff;
+  background-color: #f5edff;
 }
 .process__etape:hover i {
   color: #9356DC;
@@ -542,7 +541,6 @@ h2 {
   .local {
     gap: 1em;
   }
-
   .process h2 {
     text-align: center;
   }
